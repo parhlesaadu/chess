@@ -699,8 +699,9 @@ void SaveTheKing(char chessboard[][8]) {
 	for (int player = 1; K1 && k2; player++) {
 		K1 = false; k2 = false;
 		YourNextMove(chessboard, player);
-		for (int i = 0; i < 8; i++) {
-			for (int j = 0; j < 8; j++) {
+		// the loops below check the presence of both kings in the game
+		for (int i = 0; i < 8 && !(K1 && k2); i++) {
+			for (int j = 0; j < 8 && !(K1 && k2); j++) {
 				if (chessboard[i][j] == 'K') K1 = true;
 				if (chessboard[i][j] == 'k') k2 = true;
 			}
