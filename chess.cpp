@@ -37,11 +37,11 @@ void YourNextMove(char chessboard[][8], int player) {
 
 	DisplayBoard(chessboard);
 	char option, piece;
-	cout << "1 (King)\n"
-		<< "2 (Queen)\n"
-		<< "3 (Rook)\n"
-		<< "4 (Bishop)\n"
-		<< "5 (Knight)\n"
+	cout << "1 (K/k - King)\n"
+		<< "2 (Q/q - Queen)\n"
+		<< "3 (R/r - Rook)\n"
+		<< "4 (B/b - Bishop)\n"
+		<< "5 (N/n - Knight)\n"
 		<< "0 (Finish Game)\n";
 	bool availability = false;
 	while (!availability) {
