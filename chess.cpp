@@ -34,7 +34,7 @@ void YourNextMove(char chessboard[][8], int player) {
 	if (player == 1) b1 = 65;
 	else b1 = 97;
 	b2 = b1 + 25;
-
+// UPPERCASE (ASCII 65-90) FOR PLAYER 1 / lowercase (ASCII 97-122) for player 2
 	DisplayBoard(chessboard);
 	char option, piece;
 	cout << "1 (K/k - King)\n"
