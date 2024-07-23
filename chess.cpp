@@ -17,8 +17,9 @@ void InputValidation(int* validOptions, int* movePTR, int max) {
 	cout << "Enter your option here: ";
 	cin >> *movePTR;
 	bool validity = false;
-	for (int i = 0; i < 45; i++)
-		if (*(validOptions + i) == *movePTR) validity = true;
+	for (int i = 0; i < 45; i++) {
+		if (*(validOptions + i) == *movePTR) { validity = true; break; }
+	}
 	while (!validity || *movePTR > max || *movePTR <= 0) {
 		cout << "INVALID ENTRY! Kindly reenter: ";
 		cin >> *movePTR;
