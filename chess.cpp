@@ -15,11 +15,11 @@ void DisplayBoard(char chessboard[][8]) {
 
 void InputValidation(int* validOptions, int* movePTR, int max) {
 	bool validity = false;
-	cout << "Enter your option here: ";
-	cin >> *movePTR;
-	for (int i = 0; i < 45 && !validity; i++) {
-		if (*(validOptions + i) == *movePTR) validity = true;
-	if (!validity || *movePTR > max || *movePTR <= 0) cout << "INVALID INPUT!\n";
+	do {
+		cout << "Enter your option here: "; cin >> *movePTR;
+		if (*movePTR > max || *movePTR <= 0) goto invalid;
+		for (int i = 0; i < 45 && !validity; i++) if (*(validOptions + i) == *movePTR) validity = true;
+		invalid: if (!validity || *movePTR > max || *movePTR <= 0) cout << "INVALID INPUT!\n";
 	} while (!validity || *movePTR > max || *movePTR <= 0);
 }
 
