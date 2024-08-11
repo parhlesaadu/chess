@@ -14,20 +14,13 @@ void DisplayBoard(char chessboard[][8]) {
 }
 
 void InputValidation(int* validOptions, int* movePTR, int max) {
+	bool validity = false;
 	cout << "Enter your option here: ";
 	cin >> *movePTR;
-	bool validity = false;
 	for (int i = 0; i < 45 && !validity; i++) {
 		if (*(validOptions + i) == *movePTR) validity = true;
-	}
-	while (!validity || *movePTR > max || *movePTR <= 0) {
-		cout << "INVALID ENTRY! Kindly reenter: ";
-		cin >> *movePTR;
-		validity = false;
-		for (int i = 1; i < 45 && !validity; i++) {
-			if (*(validOptions + i) == *movePTR) validity = true;
-		}
-	}
+	if (!validity || *movePTR > max || *movePTR <= 0) cout << "INVALID INPUT!\n";
+	} while (!validity || *movePTR > max || *movePTR <= 0);
 }
 
 void YourNextMove(char chessboard[][8], int player) {
