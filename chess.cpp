@@ -719,7 +719,6 @@ void SaveTheKing(char chessboard[][8]) {
 }
 
 void start() {
-	int player = 1;
 	char chessboard[8][8] = {
 		{'R','N','B','Q','K','B','N','R'},
 		{'.','.','.','.','.','.','.','.'},
