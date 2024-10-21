@@ -82,8 +82,8 @@ void YourNextMove(char chessboard[][8], int player) {
 	cout << "Enter the current column of the piece you wish to move: "; cin >> C;
 	while (R < '0' || R > '7' || C < '0' || C > '7' || chessboard[R - 48][C - 48] != piece) {
 		cout << "INVALID POSITION!\n";
-		cout << "Kindly reenter row: "; cin >> R;
-		cout << "Kindly reenter column: "; cin >> C;
+		cout << "Kindly reenter current row of the piece you wish to move: "; cin >> R;
+		cout << "Kindly reenter current column of the piece you wish to move: "; cin >> C;
 	}
 
 	int move, validOptions[45], index = 0, * movePTR = &move, r = R - 48, c = C - 48;
