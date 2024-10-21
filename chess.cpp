@@ -32,16 +32,24 @@ void YourNextMove(char chessboard[][8], int player) {
 // UPPERCASE (ASCII 65-90) FOR PLAYER 1 / lowercase (ASCII 97-122) for player 2
 	DisplayBoard(chessboard);
 	char option, piece;
-	cout << "1 (K/k - King)\n"
-		<< "2 (Q/q - Queen)\n"
-		<< "3 (R/r - Rook)\n"
-		<< "4 (B/b - Bishop)\n"
-		<< "5 (N/n - Knight)\n"
+	if (player == 1)
+		cout << "1 (K - King)\n"
+		<< "2 (Q - Queen)\n"
+		<< "3 (R - Rook)\n"
+		<< "4 (B - Bishop)\n"
+		<< "5 (N - Knight)\n"
+		<< "0 (Finish Game)\n";
+	else
+		cout << "1 (k - King)\n"
+		<< "2 (q - Queen)\n"
+		<< "3 (r - Rook)\n"
+		<< "4 (b - Bishop)\n"
+		<< "5 (n - Knight)\n"
 		<< "0 (Finish Game)\n";
 	bool availability = false;
 	while (!availability) {
 		askagain:
-		cout << "\nPlayer " << player << " your pieces are in ";
+		cout << "\nPlayer " << player << ", your pieces are in ";
 		if (player == 1) cout << "UPPERCASE.\n";
 		else cout << "lowercase.\n";
 		cout << "Enter the number corresponding to the piece you wish to move: ";
