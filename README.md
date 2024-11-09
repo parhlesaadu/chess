@@ -12,5 +12,5 @@ Uppercase letters denote Player 1's pieces, while lowercase letters denote Playe
 As this code does not contain external libraries, it can easily be executed on any C++ compiler. If you don't have an integrated development environment (IDE) on your computer, you can visit this link, copy and paste the entire code, and run it [here](https://www.programiz.com/cpp-programming/online-compiler/).
 
 **Credits:**\
-[Saad Ahmed](https://linkedin.com/in/parhlesaadu) - input validation, procedure design
+[Saad Ahmed](https://linkedin.com/in/parhlesaadu) - input validation, procedure design\
 [Mohammad Umer](https://linkedin.com/in/mohammad-umer-1506bb250) - interface design
