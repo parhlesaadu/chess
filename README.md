@@ -10,7 +10,7 @@ This project is a simplified, two-player version of chess designed for command-l
 Players start their move by selecting a piece and entering its current coordinates (in terms of rows and columns), after which they are given several choices of new coordinates according to the rules specified above. Each player can eliminate any of their opponent's pieces, regardless of type, by landing on it. The game concludes when either king is eliminated.
 
 **How to run the game:**\
-As this code does not contain external libraries, it can easily be executed on any C++ compiler. If you don't have an integrated development environment (IDE) on your computer, you can  copy and paste the entire code and run it [here](https://www.programiz.com/cpp-programming/online-compiler/).
+As this code does not contain external libraries, it can easily be executed on any C++ compiler. If you don't have an integrated development environment (IDE) on your computer, you can  copy the entire code and paste it [here](https://www.programiz.com/cpp-programming/online-compiler/).
 
 **Credits:**\
 [Saad Ahmed](https://linkedin.com/in/saadahmed1084) - input validation, piece shifting\
