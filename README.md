@@ -13,5 +13,5 @@ Players start their move by selecting a piece and entering its current coordinat
 As this code does not contain external libraries, it can easily be executed on any C++ compiler. If you don't have an integrated development environment (IDE) on your computer, you can  copy and paste the entire code and run it [here](https://www.programiz.com/cpp-programming/online-compiler/).
 
 **Credits:**\
-[Saad Ahmed](https://linkedin.com/in/parhlesaadu) - input validation, piece shifting\
+[Saad Ahmed](https://linkedin.com/in/saadahmed1084) - input validation, piece shifting\
 [Mohammad Umer](https://linkedin.com/in/mohammad-umer-1506bb250) - interface design
