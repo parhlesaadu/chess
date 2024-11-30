@@ -7,6 +7,7 @@ This project is a simplified, two-player version of chess designed for command-l
 - This game does not contain any pawns.
 - Uppercase letters denote Player 1's pieces, while lowercase letters denote Player 2's.
 
+**Gameplay instructions:**\
 Players start their move by selecting a piece and entering its current coordinates (in terms of rows and columns), after which they are given several choices of new coordinates according to the rules specified above. Each player can eliminate any of their opponent's pieces, regardless of type, by landing on it. The game concludes when either king is eliminated.
 
 **How to run the game:**\
